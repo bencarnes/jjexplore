@@ -6,6 +6,8 @@ The goal is to build a fun game that doubles as a learning codebase — change t
 
 **New here? See [LEARNING.md](LEARNING.md)** for a guided tour, suggested first changes, and a map of Python concepts to their locations in the code.
 
+![Screenshot](GameScreenshot.png)
+
 ## Project Layout
 
 ```
