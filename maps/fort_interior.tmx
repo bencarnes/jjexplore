@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="11" height="9" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="4">
+ <tileset firstgid="1" source="../assets/tileset.tsx"/>
+ <layer id="1" name="ground" width="11" height="9">
+  <data encoding="csv">
+7,7,7,7,7,7,7,7,7,7,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,8,8,8,8,8,8,8,8,8,7,
+7,7,7,7,7,8,7,7,7,7,7
+</data>
+ </layer>
+ <objectgroup id="2" name="interact">
+   <object id="1" name="fort_chest" type="chest" x="160" y="128" width="32" height="32">
+    <properties>
+     <property name="text" value="An ancient sword!"/>
+     <property name="item" value="sword:1"/>
+    </properties>
+   </object>
+   <object id="2" name="fort_greeter" type="npc" x="224" y="160" width="32" height="32">
+    <properties>
+     <property name="text" value="Welcome to the fort.|This blade has waited many years for an heir."/>
+    </properties>
+   </object>
+   <object id="3" name="fort_exit" type="transition" x="160" y="256" width="32" height="32">
+    <properties>
+     <property name="target_map" value="overworld.tmx"/>
+     <property name="target_tx" type="int" value="27"/>
+     <property name="target_ty" type="int" value="20"/>
+    </properties>
+   </object>
+  </objectgroup>
+</map>
